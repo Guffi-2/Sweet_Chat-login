@@ -68,6 +68,40 @@ background-color: rgba(var(--d69,0,149,246),1);
 }
 #divmenu{
     width: 100px;
-    height: 770px;
+    height: 760px;
     background-color: rgb(17, 17, 17);
+}
+#MyMenu{
+    position: relative;
+    width: 80px; 
+    height: 80px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    left: 10px;
+    top: 70px;
+    outline: none;
+    border: 0;
+}
+#p_MyMenu{
+    margin-left: 5px;
+    margin-top: 75px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+#top_art{
+    position: relative;
+    width: 80px; 
+    height: 80px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 10px;
+    left: 10px;
+    top: 10px;
+    outline: none;
+    border: 0;
+}
+#p_top_art{
+    margin-left: 11px;
+    margin-top: 14px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
 }

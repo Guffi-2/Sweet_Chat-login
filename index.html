@@ -2,33 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>Арт мастер</title>
+    <title>Document</title>
 </head>
 <body>
-    <div id="logo_v">
-        <div id="logo">
-            <h2>
-              Арт мастер
-            </h2>
-            </div> 
-        </div>
-    </div>
-            <div class="main">
-                <div id="divmenu">
-                  <button id="MyMenu" onclick="window.location.href = 'https:apple.com';">
-                    
-                  </button>
-                  <h3 id="p_MyMenu">
-                    Партфолио
-                  </h3>
-                  <button id="top_art" onclick="window.location.href = 'https:apple.com';">
-
-                  </button>
-                    <h3 id="p_top_art">
-                      Топ арты
-                    </h3>
-                </div>
-              </div>
+    <button class="photos__like-icon" type="button"></button>
+    <div class="photos__like-count">0</div>
+    <script>
+        document.addEventListener('click', ({ target: t }) => {
+  if (t.classList.contains('photos__like-icon')) {
+    const index = [...document.querySelectorAll('.photos__like-icon')].indexOf(t);
+    const count = document.querySelectorAll('.photos__like-count')[index];
+    count.classList.toggle('active');
+    count.innerText -= [ 1, -1 ][+count.classList.contains('active')];
+  }
+});
+    </script>
 </body>
 </html>
